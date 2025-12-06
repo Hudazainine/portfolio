@@ -104,7 +104,7 @@ export default function Home() {
 
       <main className="main">
         <section id="hero" className="hero section ">
-          <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" />
+          <img src="D:\Mes_Photos\houda.png" alt="" data-aos="fade-in" />
 
           <div className="container" data-aos="zoom-out" data-aos-delay="100">
             <h2>Houda Zaïnine</h2>
