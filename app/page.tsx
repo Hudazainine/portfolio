@@ -1,30 +1,20 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Typed from "typed.js";
 import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    // plugins JS exécutés côté client
-    if (typeof window !== "undefined") {
-      require("aos/dist/aos.css");
-      require("aos").init();
-      require("typed.js");
-    }
+    AOS.init();
   }, []);
 
   return (
-    <>
-      {/* Header */}
-      <header
-        id="header"
-        className="header d-flex align-items-center fixed-top"
-      >
         <div className="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-          <Link href="/" className="logo d-flex align-items-center">
-            <h1 className="sitename">Personal Houda</h1>
-          </Link>
+            <Link href="/" className="logo d-flex align-items-center">
+              <h1 className="sitename">Personal Houda</h1>
+            </Link>
 
           <nav id="navmenu" className="navmenu">
             <ul>
