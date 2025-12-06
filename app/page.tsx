@@ -7,7 +7,7 @@ export default function Home() {
       >
         <div className="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
           <a href="#" className="logo d-flex align-items-center">
-            <h1 className="sitename">Personal</h1>
+            <h1 className="sitename">Houda.dev</h1>
           </a>
 
           <nav id="navmenu" className="navmenu">
