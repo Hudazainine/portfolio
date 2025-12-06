@@ -56,7 +56,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Read Docs
+            Houda
           </a>
         </div>
       </main>
