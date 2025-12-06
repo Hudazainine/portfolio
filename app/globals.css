@@ -313,7 +313,7 @@ h6 {
 #preloader {
   position: fixed;
   inset: 0;
-  background: var(--background-color);
+
   z-index: 999999;
   transition: all 0.6s ease-out;
 }
