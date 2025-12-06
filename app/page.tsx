@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
@@ -30,7 +29,7 @@ export default function Home() {
       <main className="main">
         <section id="hero" className="hero section">
           <img
-            src="/assets/img/hero-bg.jpg"
+            src="/public/assets/houda.png"
             alt="Hero Background"
             data-aos="fade-in"
           />
