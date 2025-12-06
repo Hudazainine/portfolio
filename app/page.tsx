@@ -87,7 +87,7 @@ export default function Home() {
           <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" />
 
           <div className="container" data-aos="zoom-out" data-aos-delay="100">
-            <h2>Emily Jones</h2>
+            <h2>Houda Zaïnine</h2>
             <p>
               I'm{" "}
               <span
