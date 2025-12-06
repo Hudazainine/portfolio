@@ -1,4 +1,23 @@
+import { useEffect } from "react";
+
 export default function Home() {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      import("aos").then(({ default: AOS }) => AOS.init());
+      import("typed.js").then(({ default: Typed }) => {
+        const el = document.querySelector(".typed");
+        if (el) {
+          new Typed(el, {
+            strings: ["Designer", "Developer", "Freelancer", "Photographer"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true,
+          });
+        }
+      });
+    }
+  }, []);
+
   return (
     <>
       <header
