@@ -1,4 +1,3 @@
-// app/about/About.tsx
 "use client";
 
 export default function About() {
