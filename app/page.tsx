@@ -84,7 +84,7 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <Link href="/about">About</Link>
+                <Link href="/About">About</Link>
               </li>
               <li>
                 <a href="#">Resume</a>
