@@ -101,7 +101,7 @@ export default function Home() {
       </header>
 
       <main className="main">
-        <section id="hero" className="hero section dark-background">
+        <section id="hero" className="hero section ">
           <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" />
 
           <div className="container" data-aos="zoom-out" data-aos-delay="100">
@@ -131,7 +131,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer id="footer" className="footer dark-background">
+      <footer id="footer" className="footer ">
         <div className="container">
           <h3 className="sitename">Personal</h3>
           <p>Et aut eum quis fuga eos sunt ipsa nihil.</p>
