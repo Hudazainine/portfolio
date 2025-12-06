@@ -9,7 +9,7 @@ export default function Home() {
         const el = document.querySelector(".typed");
         if (el) {
           new Typed(el, {
-            strings: ["Designer", "Developer", "Freelancer", "Photographer"],
+            strings: ["Designer", "Developer", "Freelancer"],
             typeSpeed: 50,
             backSpeed: 25,
             loop: true,
