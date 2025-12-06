@@ -1,8 +1,9 @@
 "use client";
 import { useEffect } from "react";
 import Head from "next/head";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 export default function Home() {
+  const router = useRouter();
   useEffect(() => {
     if (typeof window !== "undefined") {
       import("aos").then(({ default: AOS }) => AOS.init());
@@ -84,7 +85,9 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <Link href="/about">About</a>
+                <button onClick={() => router.push("/about")}>
+                  Go to About Page
+                </button>
               </li>
               <li>
                 <a href="#">Resume</a>
