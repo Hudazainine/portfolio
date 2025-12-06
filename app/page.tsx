@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import Head from "next/head";
+import Link from "next/link";
 export default function Home() {
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -83,7 +84,7 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a href="#">About</a>
+                <Link href="/about">About</a>
               </li>
               <li>
                 <a href="#">Resume</a>
