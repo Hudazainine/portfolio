@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Link from "next/link";
 
 export default function Home() {
@@ -23,36 +25,7 @@ export default function Home() {
 
   return (
     <>
-      <header className="header d-flex align-items-center fixed-top">
-        <div className="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-          <a href="#" className="logo d-flex align-items-center">
-            <h1 className="sitename">Houda.dev</h1>
-          </a>
-
-          <nav id="navmenu" className="navmenu">
-            <ul>
-              <li>
-                <a href="#" className="active">
-                  Home
-                </a>
-              </li>
-              <li>
-                <Link href="/about">About</Link>
-              </li>
-              <li>
-                <a href="#">Resume</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <a href="#">Portfolio</a>
-              </li>
-            </ul>
-            <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       <main className="main">
         <section id="hero" className="hero section">
@@ -88,6 +61,8 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      <Footer />
     </>
   );
 }
