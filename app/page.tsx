@@ -23,7 +23,7 @@ export default function Home() {
       >
         <div className="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
           <Link href="/" className="logo d-flex align-items-center">
-            <h1 className="sitename">Personal</h1>
+            <h1 className="sitename">Personal Houda</h1>
           </Link>
 
           <nav id="navmenu" className="navmenu">
