@@ -1,26 +1,4 @@
-"use client";
-
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 export default function Home() {
-  useEffect(() => {
-    AOS.init();
-
-    import("typed.js").then(({ default: Typed }) => {
-      const element = document.querySelector(".typed");
-      if (element) {
-        new Typed(element, {
-          strings: ["Designer", "Developer", "Freelancer", "Photographer"],
-          typeSpeed: 50,
-          backSpeed: 25,
-          loop: true,
-        });
-      }
-    });
-  }, []);
-
   return (
     <>
       <header
