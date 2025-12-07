@@ -25,45 +25,38 @@
   /* Scroll behavior */
   scroll-behavior: smooth;
 }
-a:focus,
-button:focus {
-  outline: 2px solid var(--accent-color);
-  outline-offset: 2px;
-}
-.navmenu {
-  transition: right 0.3s ease-in-out;
-}
-.section-title h2 {
-  font-size: clamp(24px, 5vw, 36px);
-}
-.section-title h2::after {
-  content: "";
-  width: clamp(80px, 15%, 120px);
-  height: 2px; /* un peu plus visible */
-  display: block;
-  background: var(--accent-color);
-  margin: 10px auto; /* centré automatiquement */
-}
-@keyframes float {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-  50% {
-    transform: translate3d(0, -20px, 0);
-  }
-}
-.hero .hero-title {
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
 }
 
-.hero .lead {
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
 }
-.about .about-content .skills-grid .skill-item {
-  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+
+a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: none;
 }
-:root {
-  --bp-md: 768px;
-  --bp-sm: 576px;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+.php-email-form .error-message {
+  display: none;
+  background: #df1529;
+  color: #ffffff;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
 }
