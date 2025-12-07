@@ -1,0 +1,38 @@
+:root {
+  /* Fonts */
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Quicksand", sans-serif;
+  --nav-font: "Open Sans", sans-serif;
+
+  /* Global Colors */
+  --background-color: #ffffff;
+  --default-color: #314862;
+  --heading-color: #13447f;
+  --accent-color: #065cc2;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
+
+  /* Nav Menu Colors */
+  --nav-color: #314862;
+  --nav-hover-color: #065cc2;
+  --nav-mobile-background-color: #11427d;
+  --nav-dropdown-background-color: #065cc2;
+  --nav-dropdown-color: #acc4e0;
+  --nav-dropdown-hover-color: #ffffff;
+
+  /* Scroll behavior */
+  scroll-behavior: smooth;
+}
+a:focus,
+button:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+.navmenu {
+  transition: right 0.3s ease-in-out;
+}
+.section-title h2 {
+  font-size: clamp(24px, 5vw, 36px);
+}
